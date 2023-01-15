@@ -262,7 +262,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) {
   .mobile-menu-btn-open {
     display: none;
   }
@@ -398,7 +398,6 @@ body {
     url(../images/people-office.jpg);
   background-color: var(--headings-color);
   background-size: cover;
-  margin: 0 auto;
 }
 
 .hero-title {
@@ -443,20 +442,44 @@ body {
 }
 
 /* ==========================HERO-MOBILE========================== */
-@media sreen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .hero {
-    width: 100px;
+    width: 100%;
+    padding-top: 112px;
+    padding-bottom: 112px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/img-bg-mobile@1x.jpg);
   }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/img-bg-mobile@2x.jpg");
+    }
+  }
+
+  .hero-title {
+    font-size: 36px;
+    line-height: 1.1;
+    margin-bottom: 72px;
+  }
+
+  .hero-btn {
+    line-height: 1.5;
+  }
 }
 
 /* ==========================QUALITIES========================== */
 
-/* .qualities-subtitle {
+.qualities-subtitle {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -492,7 +515,32 @@ body {
   margin-bottom: 8px;
   align-items: center;
   justify-content: center;
-} */
+}
+
+@media screen and (max-width: 480px) {
+  .qualities-pics {
+    display: none;
+  }
+
+  .qualities-list {
+    flex-direction: column;
+    gap: 72px;
+  }
+
+  .qualities .container {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .qualities-subtitle {
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.1;
+  }
+
+  .qualities-text {
+  }
+}
 /* ==========================WORKS========================== */
 
 /* .works {
