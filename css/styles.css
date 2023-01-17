@@ -1253,6 +1253,10 @@ body {
     margin-bottom: 48px;
   }
 
+  .footer .container {
+    width: 565px;
+  }
+
   .footer-content {
     display: flex;
     justify-content: center;
