@@ -69,7 +69,6 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
-  /* margin-right: 77px; - for desktop */
 }
 
 .web-head {
@@ -487,7 +486,7 @@ body {
   margin-bottom: 56px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 425px) {
   .customer-list-item:not(:last-child) {
     margin-bottom: 72px;
   }
@@ -499,7 +498,6 @@ body {
 }
 
 .footer .container {
-  width: 100%;
   padding-top: 96px;
   padding-bottom: 96px;
 }
@@ -1178,6 +1176,7 @@ body {
   .site-auth .link:focus {
     color: var(--primary-accent-color);
   }
+
   .hero {
     padding-bottom: 108px;
     background-image: linear-gradient(
@@ -1263,6 +1262,7 @@ body {
   .footer-content {
     display: flex;
     flex-wrap: wrap;
+    gap: 24px;
   }
 
   .content-part-one {
@@ -1270,11 +1270,13 @@ body {
     flex-direction: column;
     align-items: flex-start;
     text-align: start;
+    margin-bottom: 48px;
   }
 
   .content-part-two {
     align-items: flex-start;
     margin-left: 24px;
+    margin-bottom: 48px;
   }
 
   .content-part-three {
@@ -1329,20 +1331,182 @@ body {
   .project-img {
     width: 360px;
   }
-
-  /* .project-card:not(:last-child) {
-    margin-bottom: 48px;
-} */
 }
 /* ==========================GENERAL-DESKTOP========================== */
+
 @media screen and (min-width: 1200px) {
   .container {
     width: 1158px;
   }
 
   .section {
-    padding-top: 120px;
     padding-bottom: 120px;
+  }
+
+  .logo-header {
+    margin-right: 76px;
+  }
+
+  .page-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .site-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .site-auth {
+    flex-direction: row;
+    margin-left: auto;
+  }
+
+  .auth-item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/img-bg-desktop@1x.jpg);
+    background-color: var(--headings-color);
+    background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/img-bg-desktop@2x.jpg");
+    }
+  }
+
+  .hero-title {
+    margin-bottom: 48px;
+  }
+
+  .qualities .container {
+    padding-top: 120px;
+    padding-bottom: 0;
+  }
+
+  .qualities {
+    padding-top: 0;
+  }
+
+  .qualities-pics {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 264px;
+    height: 112px;
+    background-color: #f4f4fd;
+    margin-bottom: 8px;
+  }
+
+  .qualities-list {
+    gap: 24px;
+  }
+
+  .qualities-list .quality-item {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+
+  .qualities-subtitle {
+    font-size: 20px;
+  }
+
+  .quality-item:nth-child(-n + 2) {
+    margin-bottom: 0;
+  }
+
+  .works {
+    padding-top: 0;
+  }
+
+  .works-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .works-list .works-item {
+    flex-basis: calc((100% - 48px) / 3);
+  }
+
+  .works-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--headings-color);
+
+    margin-bottom: 72px;
+  }
+
+  .team-card:nth-child(-n + 2) {
+    margin-bottom: 0;
+  }
+
+  .team .container {
+    padding-top: 120px;
+    padding-bottom: 0;
+  }
+
+  .customers .container {
+    padding-top: 120px;
+    padding-bottom: 0;
+  }
+
+  .customer-list-item:nth-child(-n + 3) {
+    margin-bottom: 0;
+  }
+
+  .footer .container {
+    width: 1158px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .footer-content {
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .content-part-one {
+    margin-right: 120px;
+    margin-bottom: 0;
+  }
+
+  .content-part-two {
+    margin-right: 80px;
+    margin-bottom: 0;
+  }
+
+  .send-email {
+    width: 264px;
+    margin-bottom: 0;
+  }
+  .footer {
+    padding-bottom: 0;
   }
 }
 /* ==========================HEADER-NAVIGATION-DESKTOP========================== */
