@@ -1271,6 +1271,7 @@ body {
 .portfolio .container {
   padding-top: 48px;
   padding-bottom: 48px;
+  width: 428px;
 }
 
 .visually-hidden {
@@ -1329,6 +1330,93 @@ body {
 .filter-btn:active {
   background-color: var(--active-elements-color);
   color: var(--main-white);
+}
+/* ==========================PORTFOLIO-PROJECTS-MOBILE========================== */
+
+.project-card:not(:last-child) {
+  margin-bottom: 48px;
+}
+
+.project-link {
+  display: block;
+}
+
+.project-link:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.overlay-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0, 100%);
+  width: 100%;
+  height: 100%;
+  padding-top: 40px;
+  padding-right: 32px;
+  padding-left: 32px;
+  background-color: var(--primary-accent-color);
+  color: var(--light-background);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  transition: transform var(--transition-dur-and-func);
+}
+
+.project-link:hover .overlay,
+.project-link:focus .overlay {
+  transform: translate(0, 0);
+}
+
+.project-content-wrapper {
+  background-color: #ffffff;
+  padding: 32px 16px;
+  border: 0.5px solid #f4f4fd;
+  border-top: none;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.project-list .project-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--headings-color);
+  margin-bottom: 8px;
+}
+
+.project-list .project-description {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+@media screen and (max-width: 427px) {
+  .project-card {
+    width: 100%;
+  }
+
+  .project-img {
+    width: 100%;
+  }
+
+  .portfolio .container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 428px) {
+  .project-content-wrapper {
+    width: 396px;
+  }
 }
 
 /* ==========================PORTFOLIO-PROJECTS========================== */
@@ -1411,90 +1499,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 } */
-
-/* ==========================PORTFOLIO-PROJECTS-MOBILE========================== */
-
-.project-card:not(:last-child) {
-  margin-bottom: 48px;
-}
-
-.project-link {
-  display: block;
-}
-
-.project-link:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
-.overlay-wrapper {
-  position: relative;
-  overflow: hidden;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(0, 100%);
-  width: 100%;
-  height: 100%;
-  padding-top: 40px;
-  padding-right: 32px;
-  padding-left: 32px;
-  background-color: var(--primary-accent-color);
-  color: var(--light-background);
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-
-  transition: transform var(--transition-dur-and-func);
-}
-
-.project-link:hover .overlay,
-.project-link:focus .overlay {
-  transform: translate(0, 0);
-}
-
-.project-content-wrapper {
-  background-color: #ffffff;
-  padding: 32px 16px;
-  border: 0.5px solid #f4f4fd;
-  border-top: none;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
-
-.project-list .project-title {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--headings-color);
-  margin-bottom: 8px;
-}
-
-.project-list .project-description {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--primary-text-color);
-}
-
-@media screen and (max-width: 427px) {
-  .project-card {
-    width: 100%;
-  }
-
-  .project-img {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 428px) {
-  .project-content-wrapper {
-    width: 396px;
-  }
-}
 /* ==========================BACKDROP+MODAL========================== */
 
 /* .backdrop {
