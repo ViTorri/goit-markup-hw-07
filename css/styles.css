@@ -494,11 +494,14 @@ body {
 }
 /* ==========================LOGO-FOOTER-MOBILE========================== */
 
+.footer {
+  background-color: var(--headings-color);
+}
+
 .footer .container {
   width: 100%;
   padding-top: 96px;
   padding-bottom: 96px;
-  background-color: var(--headings-color);
 }
 
 .logo-footer {
