@@ -1413,9 +1413,6 @@ body {
 } */
 
 /* ==========================PORTFOLIO-PROJECTS-MOBILE========================== */
-.project-card {
-  margin-right: 0;
-}
 
 .project-card:not(:last-child) {
   margin-bottom: 48px;
