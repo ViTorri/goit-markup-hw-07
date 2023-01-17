@@ -114,7 +114,6 @@ body {
     padding: 40px;
     width: 100%;
     height: 100%;
-    max-height: 796px;
     top: 0;
     left: 0;
     z-index: 1000;
@@ -186,6 +185,10 @@ body {
     transition: color var(--transition-dur-and-func);
   }
 
+  .current-link {
+    color: #4d5ae5;
+  }
+
   .nav-link:hover {
     color: var(--active-elements-color);
   }
@@ -194,10 +197,10 @@ body {
     display: block;
     margin-bottom: 40px;
     font-weight: 500;
-    font-size: 34px;
+    font-size: 36px;
     line-height: 1.1;
     text-transform: capitalize;
-    color: var(--primary-text-color);
+    color: var(--primary-accent-color);
     transition: color var(--transition-dur-and-func);
   }
 
@@ -239,6 +242,16 @@ body {
   .mobile-menu-socials-link:hover,
   .mobile-menu-socials-link:focus {
     background-color: var(--active-elements-color);
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 427px) {
+  .menu-tel-link {
+    font-size: 26px;
+  }
+
+  .mobile-menu-socials {
+    gap: 24px;
   }
 }
 /* ==========================HERO-MOBILE========================== */
@@ -656,6 +669,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  overflow-y: scroll;
   background-color: rgba(46, 47, 66, 0.4);
 
   transition: opacity var(--transition-dur-and-func),
@@ -1290,10 +1304,6 @@ body {
 
   .footer-text {
     font-size: 14px;
-  }
-
-  .modal {
-    width: 408px;
   }
 
   .portfolio .container {
